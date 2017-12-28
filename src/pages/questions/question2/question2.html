@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Input Location
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+
+  <ion-item>
+    <ion-label stacked>Latitude</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Longitude</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <p>Or</p>
+
+  <ion-item>
+    <ion-label stacked>Street Address/ Mile Marker</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>State</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>City</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Zip</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button block [navPush]="question3Page">Submit</button>
+</div>
+
+</ion-content>

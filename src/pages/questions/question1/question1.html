@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Location
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider color="light">What is your current location?</ion-item-divider>
+    <ion-item>Use my phones location?
+    <ion-icon name="locate"></ion-icon>
+    </ion-item>
+    <ion-item [navPush]="question2Page">Input my location</ion-item>
+  </ion-item-group>
+</ion-content>

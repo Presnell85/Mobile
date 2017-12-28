@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Service
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      What type of service do you need?
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Tow</ion-label>
+      <ion-radio value="tow"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tire</ion-label>
+      <ion-radio  value="tire"></ion-radio>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+    <button ion-button block [navPush]="question4Page" >Submit</button>
+  </div>
+
+</ion-content>

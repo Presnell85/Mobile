@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Account Setup
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card [navPush]="cardPage">
+    <ion-card-header>
+      Payments
+    </ion-card-header>
+    <ion-card-content>
+      Set up your payment options
+    </ion-card-content>
+    <ion-fab right top>
+      <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab><ion-icon name="pricetag"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-apple"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      Company Information
+    </ion-card-header>
+    <ion-card-content>
+      Set up your employer information
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

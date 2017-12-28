@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Intake
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider color="light">Is this an Emergency?</ion-item-divider>
+    <ion-item [navPush]="yesPage">Yes</ion-item>
+    <ion-item [navPush]="question1">No</ion-item>
+  </ion-item-group>
+</ion-content>

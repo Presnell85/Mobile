@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vehicle Types</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+
+<div padding>
+  <button ion-button block color="Primary">Select Vehicle</button>
+</div>
+
+  <div class="row">
+  <div class="types">
+    <img src="../../assets/imgs/icons8-pickup-front-view-40.png" height="40" width="40"/>
+  </div>
+    <div class="types">
+      <img src="../../assets/imgs/icons8-trailer-unloading-40.png" height="40" width="40"/>
+    </div>
+    <div class="types">
+      <img src="../../assets/imgs/icons8-trailer-40.png" height="40" width="40"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="types">
+      <img src="../../assets/imgs/icons8-tow-truck-50.png" height="50" width="50"/>
+    </div>
+    <div class="types">
+      <img src="../../assets/imgs/icons8-pickup-front-view-40.png" height="40" width="40"/>
+    </div>
+    <div class="types">
+      <img src="../../assets/imgs/icons8-mobile-home-40.png" height="40" width="40"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="types">
+      <img src="../../assets/imgs/icons8-container-truck-50.png" height="50" width="50"/>
+    </div>
+    <div class="types">
+      <img src="../../assets/imgs/icons8-camper-40.png" height="40" width="40"/>
+    </div>
+    <div class="types">
+      <img src="../../assets/imgs/icons8-truck-50.png" height="50" width="50"/>
+    </div>
+  </div>
+
+</ion-content>
