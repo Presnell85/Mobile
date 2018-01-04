@@ -21,6 +21,10 @@ import { Question2Page } from '../pages/questions/question2/question2';
 import { Question3Page } from '../pages/questions/question3/question3';
 import { Question4Page } from '../pages/questions/question4/question4';
 import { CardPage } from '../pages/payments/stripe/stripe';
+import { Geolocation } from '@ionic-native/geolocation';
+import { NativeGeocoder } from '@ionic-native/native-geocoder';
+import { LocationAccuracy } from '@ionic-native/location-accuracy';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -75,7 +79,8 @@ import { Stripe } from '@ionic-native/stripe';
   providers: [
     StatusBar,
     SplashScreen,
-    Camera, Stripe,
+    Camera, Stripe, Geolocation, NativeGeocoder,
+    LocationAccuracy,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
