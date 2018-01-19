@@ -15,7 +15,7 @@ export class Question1Page {
   question2Page: any;
 
 
-  constructor(public navCtrl: NavController, public geolocation: Geolocation, public geocoder: NativeGeocoder,public toaster: ToastController, public locac: LocationAccuracy) {
+  constructor(public navCtrl: NavController, private geolocation: Geolocation, public geocoder: NativeGeocoder,public toaster: ToastController, public locac: LocationAccuracy) {
   this.question2Page = Question2Page;
 
   }
@@ -23,7 +23,8 @@ export class Question1Page {
     let options = {
       enableHighAccuracy: true
     };
-    this.locac.canRequest().then((res: boolean) => {
+
+      this.locac.canRequest().then((res: boolean) => {
       if (res) {
         this.locac.request(this.locac.REQUEST_PRIORITY_HIGH_ACCURACY).then(() => {
           this.geolocation.getCurrentPosition(options).then((position: Geoposition) => {
