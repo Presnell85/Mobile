@@ -17,7 +17,7 @@ export class Question1Page {
 
   constructor(public navCtrl: NavController, public geolocation: Geolocation, public geocoder: NativeGeocoder,public toaster: ToastController, public locac: LocationAccuracy) {
   this.question2Page = Question2Page;
-  
+
   }
   geolocate() {
     let options = {
